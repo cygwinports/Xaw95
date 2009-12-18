@@ -1,0 +1,13 @@
+Cygwin has <wctype.h> but we need to use <wchar.h> for wcs* functions
+
+--- origsrc/Xaw95-1.1/XawI18n.h	1996-09-08 12:58:02.000000000 -0500
++++ src/Xaw95-1.1/XawI18n.h	2009-12-17 22:58:15.210731700 -0600
+@@ -27,7 +27,7 @@ in this Software without prior written a
+ 
+ ********************************************************/
+ 
+-#ifdef HAS_WCTYPE_H
++#if defined(HAS_WCTYPE_H) && !defined(__CYGWIN__)
+ #include <wctype.h>
+ #include <widec.h>
+ #define wcslen(c) wslen(c)

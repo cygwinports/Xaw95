@@ -1,0 +1,6 @@
+category: X11
+requires: libXaw95_7 libX11-devel libXmu-devel libXt-devel
+external-source: Xaw95
+sdesc: "Athena widgets with Win95 appearance (development)"
+ldesc: "Xaw95 is a good replacement of Athena Widget and its variant 
+(including Xaw3d), and it has a good look-and-feel of Windows 95."
